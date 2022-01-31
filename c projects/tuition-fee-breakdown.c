@@ -33,7 +33,7 @@ main(){
 	printf("Base Tuition is %lf", baseTuitionFee);
 	printf("Enter the mode of payment: ");
 	scanf("%f", &modeOfPayment);
-	switch(modeOfPayment){
+	sswitch(modeOfPayment){
 		case 1:
 			tuitionFullPayment = baseTuitionFee + miscellaneous;
 			printf("-------------------------------------------- \n");
