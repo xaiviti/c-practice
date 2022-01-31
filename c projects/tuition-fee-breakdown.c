@@ -15,8 +15,8 @@ Total Tuition Fees and its Breakdown
 
 main(){
 	//declaration
-	double units, amountPerUnit, baseTuitionFee;
-	int modeOfPayment;
+	double units, amountPerUnit, baseTuitionFee, interest, base;
+	int modeOfPayment, terms;
 	double tuitionFullPayment, tuitionInstallmentDP, tuitionInstallmentTerms;
 	
 	printf("Tuition Fee Calculator \n");
@@ -39,14 +39,29 @@ main(){
 			printf("-------------------------------------------- \n");
 			printf("Total Tuition Fee: %lf\n", tuitionFullPayment);
 			printf("-------------------------------------------- \n");
-			printf("Breakdown: ");
+			printf("Breakdown: \n");
 			printf("---------------------------- \n");
-			printf("Number of Units: &lf", units);
-			printf("Amount per Unit: %lf", amountPerUnit);
-			printf("Miscellaneous: %lf", amountPerUnit);
+			printf("Number of Units: %lf\n", units);
+			printf("Amount per Unit: %lf\n", amountPerUnit);
+			printf("Miscellaneous: %lf\n", miscellaneous);
 			printf("---------------------------- \n");
 			break;
 		case 2:
+			printf("Enter the number of terms: ");
+			scanf("%d", &terms);
+			base = baseTuitionFee + miscellaneous;
+			interest = base*0.20;
+			tuitionFullPayment = base + interest;
+			printf("-------------------------------------------- \n");
+			printf("Total Tuition Fee: %lf\n", tuitionFullPayment);
+			printf("-------------------------------------------- \n");
+			printf("Breakdown: \n");
+			printf("---------------------------- \n");
+			printf("Number of Units: %lf\n", units);
+			printf("Amount per Unit: %lf\n", amountPerUnit);
+			printf("Miscellaneous: %lf\n", miscellaneous);
+			printf("Interest: %lf\n", interest);
+			printf("---------------------------- \n");
 			break;
 		default:
 			break;
