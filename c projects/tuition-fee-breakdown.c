@@ -65,13 +65,14 @@ main(){
 			tuitionInstallmentDP = 3500.00;
 			printf("Installment Plan: \n");
 			printf("Down Payment: %lf\n", tuitionInstallmentDP);
-			tuitionInstallmentTerms = tuitionFullPayment / terms;
+			tuitionInstallmentTerms = (tuitionFullPayment-tuitionInstallmentDP) / terms;
 			for(i=0; i<terms; i++){
-				printf("Payment %d: %lf\n", i, tuitionInstallmentTerms);
+				printf("Payment %d: %lf\n", i+1, tuitionInstallmentTerms);
 			}
 			printf("---------------------------- \n");
 			break;
 		default:
+			printf("Mode of Payment Selection Error! \n");
 			break;
 		
 	}
