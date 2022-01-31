@@ -16,7 +16,7 @@ Total Tuition Fees and its Breakdown
 main(){
 	//declaration
 	double units, amountPerUnit, baseTuitionFee, interest, base;
-	int modeOfPayment, terms;
+	int modeOfPayment, terms, i;
 	double tuitionFullPayment, tuitionInstallmentDP, tuitionInstallmentTerms;
 	
 	printf("Tuition Fee Calculator \n");
@@ -61,6 +61,14 @@ main(){
 			printf("Amount per Unit: %lf\n", amountPerUnit);
 			printf("Miscellaneous: %lf\n", miscellaneous);
 			printf("Interest: %lf\n", interest);
+			printf("---------------------------- \n");
+			tuitionInstallmentDP = 3500.00;
+			printf("Installment Plan: \n");
+			printf("Down Payment: %lf\n", tuitionInstallmentDP);
+			tuitionInstallmentTerms = tuitionFullPayment / terms;
+			for(i=0; i<terms; i++){
+				printf("Payment %d: %lf\n", i, tuitionInstallmentTerms);
+			}
 			printf("---------------------------- \n");
 			break;
 		default:
