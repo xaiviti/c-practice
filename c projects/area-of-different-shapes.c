@@ -35,7 +35,7 @@ main(){
 			printf("(1) Radius\n");
 			printf("(2) Diameter\n");
 			printf("Enter which measurement you have: \n");
-			scanf("%lf", &measurementChoice);
+			scanf("%d", &measurementChoice);
 			printf("----------------------------------------\n");
 			switch(measurementChoice){
 				case 1:
