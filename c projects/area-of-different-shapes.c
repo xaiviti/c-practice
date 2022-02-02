@@ -65,7 +65,7 @@ main(){
 			scanf("%lf", &side);
 			areaSquare = side*side;
 			printf("----------------------------------------\n");
-			printf("Area of Square is  %lf\n", areaRectangle);
+			printf("Area of Square is  %lf\n", areaSquare);
 			break;
 		case 3:
 			printf("----------------------------------------\n");
