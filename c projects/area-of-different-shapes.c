@@ -15,7 +15,7 @@ main(){
 	double areaCircle, radius, diameter, measurementChoice;
 	double areaSquare, side;
 	double areaRectangle, length, width;
-	double areaTriangle, side1, side2, side3;
+	double areaTriangle, side1, side2, side3, s;
 	
 	//input 1
 	printf("-----------------------AREA-----------------------\n");
@@ -44,9 +44,10 @@ main(){
 			scanf("%lf", &side2);
 			printf("Enter measurement of third side: \n");
 			scanf("%lf", &side3);
-			areaTriangle = ;
+			s = (side1+side2+side3) / 2;
+			areaTriangle = sqrt(s*(s-side1)*(s-side2)*(s-side3));
 			printf("----------------------------------------\n");
-			printf("Area of Triangle is  \n");
+			printf("Area of Triangle is  %lf\n", areaTriangle);
 			break;
 		default:
 			printf("Invalid, no selection!");
