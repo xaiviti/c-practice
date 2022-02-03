@@ -20,7 +20,7 @@ main(){
 	printf("(3) O\n");
 	printf("(4) AB\n");
 	printf("Enter the Blood Type: ");
-	scanf("%s", &bloodType);
+	scanf("%d", &bloodType);
 	printf("------------------------------------\n");
 	printf("(1) Positive\n");
 	printf("(2) Negative\n");
